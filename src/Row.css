@@ -9,6 +9,10 @@
   display: none;
 }
 
+.row_poster::-moz-appearance {
+  display: none;
+}
+
 .row_poster {
   object-fit: contain;
   width: 100%;
