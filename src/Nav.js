@@ -1,18 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./Nav.css";
 
 function Nav() {
+    const [show, handleShow] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if(window.scrolly > 100) {
+                handleShow(true);
+            } else handleShow(false);
+        });
+        return () => {
+           // window.removeEventListener("scroll");
+        };
+    }, []);
+
     return (
-        <div className="nav">
-            <img 
-                className="nav_logo"
-                //src="https://drive.google.com/file/d/1tRtITjyPGl3Br_N33wpuh-mnM4JoMsa7/view?usp=sharing"
-                src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2014_logo.svg"
+        <div className={`nav ${show && "nav_black"}`}>
+            <img className="nav_logo"
+                //src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2014_logo.svg"
+                //src="https://drive.google.com/file/d/1f9Y6gDLj6ERROQdLqkgzTJK3ML-I2ewY/view"
+                //src="https://github.com/ambulcao/NetMovies/blob/main/src/assets/netmovies1.png"
+                src="./assets/netmovies.svg"
                 alt="NetMovies Logo"
             />
             <img
                 className="nav_avatar"
-                src="https://pbs.twimg.com/profile_images/124011999041155"
+                src="https://occ-0-1350-360.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABd0VJiB-jlZOa4mPM_JZLqrwJamcrjh4ZVC5RcX3P3tEVQ-uJNJ36uHQcaIQvtthwlh1Xj_6lCjDxONOY6wr8ow.png?r=f71"
                 alt="NetMovies Avater"
             />
         </div>
