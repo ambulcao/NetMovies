@@ -10,7 +10,6 @@ function Nav() {
                 src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2014_logo.svg"
                 alt="NetMovies Logo"
             />
-
             <img
                 className="nav_avatar"
                 src="https://pbs.twimg.com/profile_images/124011999041155"
