@@ -17,11 +17,9 @@ function Nav() {
 
     return (
         <div className={`nav ${show && "nav_black"}`}>
-            <img className="nav_logo"
-                //src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2014_logo.svg"
-                //src="https://drive.google.com/file/d/1f9Y6gDLj6ERROQdLqkgzTJK3ML-I2ewY/view"
-                //src="https://github.com/ambulcao/NetMovies/blob/main/src/assets/netmovies1.png"
-                src="./assets/netmovies.svg"
+            <img 
+                className="nav_logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2014_logo.svg"
                 alt="NetMovies Logo"
             />
             <img

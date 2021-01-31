@@ -1,4 +1,4 @@
-# NetMovies
+# NetFlix Clone
 ## Projeto criado junto com equipe PAPA React
 
 ## Projeto 

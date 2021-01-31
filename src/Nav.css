@@ -4,9 +4,7 @@
     width: 100%;
     padding: 20px;
     height: 30px;
-
-    display: flex;
-    justify-content: space-between;
+    z-index: 1;
 
     /* Animations */
     transition-timing-function: ease-in;
@@ -18,11 +16,9 @@
 }
 
 .nav_logo {
-    /*background-image: url("./assets/netmovies.png");
-    background-size: cover;*/    
     position: fixed;
     left: 20;
-    width: 90px;
+    width: 80px;
     object-fit: contain;
 }
 
